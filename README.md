@@ -1,3 +1,7 @@
+# For Subtech Use on 5.3 PHP Servers
+
+```$ composer require subtech/php-sdk-v4 dev-4.1-dev```
+
 # Facebook SDK for PHP
 
 [![Build Status](https://img.shields.io/travis/facebook/facebook-php-sdk-v4/4.1-dev.svg)](https://travis-ci.org/facebook/facebook-php-sdk-v4)
@@ -15,7 +19,7 @@ The Facebook PHP SDK can be installed with [Composer](https://getcomposer.org/).
 ```json
 {
     "require": {
-        "facebook/php-sdk-v4": "~4.1.0@dev"
+        "subtech/php-sdk-v4": "dev-4.1-dev"
     }
 }
 ```
@@ -28,28 +32,28 @@ The Facebook PHP SDK can be installed with [Composer](https://getcomposer.org/).
 Simple GET example of a user's profile.
 
 ```php
-$fb = new Facebook\Facebook([
+$fb = new FacebookSubtech\Facebook([
   'app_id' => '{app-id}',
   'app_secret' => '{app-secret}',
   'default_graph_version' => 'v2.2',
   //'default_access_token' => '{access-token}', // optional
 ]);
 
-// Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
+// Use one of the helper classes to get a FacebookSubtech\Authentication\AccessToken entity.
 //   $helper = $fb->getRedirectLoginHelper();
 //   $helper = $fb->getJavaScriptHelper();
 //   $helper = $fb->getCanvasHelper();
 //   $helper = $fb->getPageTabHelper();
 
 try {
-  // Get the Facebook\GraphNodes\GraphUser object for the current user.
+  // Get the FacebookSubtech\GraphNodes\GraphUser object for the current user.
   // If you provided a 'default_access_token', the '{access-token}' is optional.
   $response = $fb->get('/me', '{access-token}');
-} catch(Facebook\Exceptions\FacebookResponseException $e) {
+} catch(FacebookSubtech\Exceptions\FacebookResponseException $e) {
   // When Graph returns an error
   echo 'Graph returned an error: ' . $e->getMessage();
   exit;
-} catch(Facebook\Exceptions\FacebookSDKException $e) {
+} catch(FacebookSubtech\Exceptions\FacebookSDKException $e) {
   // When validation fails or other local issues
   echo 'Facebook SDK returned an error: ' . $e->getMessage();
   exit;
