@@ -102,7 +102,7 @@ class CollectionTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('IteratorAggregate', $collection);
 
-        $newArray = [];
+        $newArray = array();
 
         foreach ($collection as $k => $v) {
             $newArray[$k] = $v;

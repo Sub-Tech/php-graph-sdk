@@ -82,7 +82,7 @@ if (isset($accessToken)) {
 
 ### getLoginUrl() {#get-login-url}
 ~~~~
-public string getLoginUrl(string $redirectUrl, array $scope = [], string $separator = '&')
+public string getLoginUrl(string $redirectUrl, array $scope = array(), string $separator = '&')
 ~~~~
 Generates an authorization URL to ask a user for access to their profile on behalf of your app.
 
@@ -95,7 +95,7 @@ Generates an authorization URL to ask a user for access to their profile on beha
 <card>
 ### getReRequestUrl() {#get-re-request-url}
 ~~~~
-public string getReRequestUrl(string $redirectUrl, array $scope = [], string $separator = '&')
+public string getReRequestUrl(string $redirectUrl, array $scope = array(), string $separator = '&')
 ~~~~
 Generates a URL to rerequest permissions from a user. The arguments are the same as the `getLoginUrl()` method above.
 </card>
@@ -103,7 +103,7 @@ Generates a URL to rerequest permissions from a user. The arguments are the same
 <card>
 ### getReAuthenticationUrl() {#get-re-authentication-url}
 ~~~~
-public string getReAuthenticationUrl(string $redirectUrl, array $scope = [], string $separator = '&')
+public string getReAuthenticationUrl(string $redirectUrl, array $scope = array(), string $separator = '&')
 ~~~~
 Generates a URL to ask the user to reauthenticate. The arguments are the same as the `getLoginUrl()` method above.
 </card>

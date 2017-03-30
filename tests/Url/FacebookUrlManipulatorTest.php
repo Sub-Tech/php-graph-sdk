@@ -92,7 +92,7 @@ class FacebookUrlManipulatorTest extends \PHPUnit_Framework_TestCase
 
     public function testGracefullyHandlesUrlAppending()
     {
-        $params = [];
+        $params = array();
         $url = 'https://www.foo.com/';
         $processed_url = FacebookUrlManipulator::appendParamsToUrl($url, $params);
         $this->assertEquals('https://www.foo.com/', $processed_url);

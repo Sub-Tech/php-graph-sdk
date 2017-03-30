@@ -339,7 +339,7 @@ class FacebookBatchRequestTest extends \PHPUnit_Framework_TestCase
 
     private function defaultHeaders()
     {
-        $headers = [];
+        $headers = array();
         foreach (FacebookRequest::getDefaultHeaders() as $name => $value) {
             $headers[] = $name . ': ' . $value;
         }
@@ -369,7 +369,7 @@ class FacebookBatchRequestTest extends \PHPUnit_Framework_TestCase
 
     private function assertRequestsMatch($requests, $formattedRequests)
     {
-        $expectedRequests = [];
+        $expectedRequests = array();
         foreach ($requests as $name => $request) {
             $expectedRequests[] = [
                 'name' => $name,
