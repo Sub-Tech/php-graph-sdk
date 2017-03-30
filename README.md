@@ -1,15 +1,8 @@
-# For Subtech Use on 5.3 PHP Servers
-
-```$ composer require subtech/php-sdk-v4 dev-4.1-dev```
-
 # Facebook SDK for PHP
 
-[![Build Status](https://img.shields.io/travis/facebook/facebook-php-sdk-v4/4.1-dev.svg)](https://travis-ci.org/facebook/facebook-php-sdk-v4)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/facebook/facebook-php-sdk-v4/badges/quality-score.png?b=4.1-dev)](https://scrutinizer-ci.com/g/facebook/facebook-php-sdk-v4/?branch=4.1-dev)
-[![Development Version](https://img.shields.io/badge/Development%20Version-4.1.0-orange.svg)](https://packagist.org/packages/facebook/php-sdk-v4)
+## For Subtech Use on 5.3 PHP Servers
 
-
-This repository contains the open source PHP SDK that allows you to access the Facebook Platform from your PHP app.
+```$ composer require subtech/php-sdk-v4 dev-4.1-dev```
 
 
 ## Installation
@@ -82,12 +75,3 @@ By default the tests will send live HTTP requests to the Graph API. If you are w
 $ ./vendor/bin/phpunit --exclude-group integration
 ```
 
-
-## Contributing
-
-For us to accept contributions you will have to first have signed the [Contributor License Agreement](https://developers.facebook.com/opensource/cla). Please see [CONTRIBUTING](https://github.com/facebook/facebook-php-sdk-v4/blob/master/CONTRIBUTING.md) for details.
-
-
-## License
-
-Please see the [license file](https://github.com/facebook/facebook-php-sdk-v4/blob/master/LICENSE) for more information.
